@@ -1,0 +1,29 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.acciones {
+    margin-top: v.$separacion;
+    @include m.tablet {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a {
+        color: v.$blanco;
+        display: block;
+        margin-bottom: calc(v.$separacion / 2);
+        text-align: center;
+
+        span {
+            color: v.$azul;
+            font-weight: v.$black;
+            font-size: 1.5rem;
+        }
+
+    }
+
+    .olvidaste {
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
